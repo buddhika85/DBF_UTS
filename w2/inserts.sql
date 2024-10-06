@@ -13,3 +13,16 @@ values ('BINS001', 'Business Information Systems'),
 
 
 select * from Subjects;
+
+insert into Results
+values ('1214', 'IITC001', 67), 
+('1214', 'BINS001', 86), 
+('1228', 'IDSA001', 50), 
+('1228', 'INDB001', null), 
+('1228', 'PROG002', 55), 
+('6623', 'PROG001', 47), 
+('6623', 'IDSC001', 58), 
+('6623', 'INDB001', 63), 
+('6623', 'INEF001', null);
+
+select * from Results;
