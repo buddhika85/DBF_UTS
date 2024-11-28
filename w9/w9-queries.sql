@@ -29,7 +29,7 @@ select w.flowerNum, f.fName, f.fColour, s.shopName, sum(w.salePrice * w.onHand) 
     where p.percentProfit <= 
 			    (select avg(percentProfit) from Profits) 
     group by w.flowerNum, f.fName, f.fColour, s.shopName
-    having sum(w.salePrice * w.onHand) > 1500
+    having sum(w.salePrice * w.onHand) >= 1500
     order by f.fName desc;
 	
 	
