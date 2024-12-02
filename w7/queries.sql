@@ -22,7 +22,7 @@ select Subnum from Results where Mark is null group by Subnum having count(subNu
 -- q4
 select s.StNum, Stname, Suburb, Mark
 from Students s inner join Results r on s.StNum = r.StNum
-where Suburb = 'Manly' and (Mark is null or Mark < 50) 
+where Suburb like '%Manly%' and (Mark is null or Mark < 50) 
 order by Stname;
 
 -- q5
@@ -39,14 +39,14 @@ select s.SubNum, SubName, Mark, Suburb
     from Subjects s, Results r, Students st
     where (s.SubNum = r.SubNum and st.Stnum = r.StNum)
 	and Mark > 50 
-	and Suburb = 'Manly' 
+	and Suburb like '%Manly%' 
     order by SubName, Mark desc;
     
 select s.SubNum, SubName, Mark, Suburb 
     from Subjects s, Results r, Students st
     where (s.SubNum = r.SubNum and st.Stnum = r.StNum)
 	and Mark > 50 
-	and Suburb = 'Manly' 
+	and Suburb like '%Manly%' 
     order by 2, 3 desc;
 	
 -- q2.	lists the numbers and names of all students who have studied a subject. 
