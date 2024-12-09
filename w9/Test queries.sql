@@ -9,5 +9,6 @@ select max(mark) 'max mark' from Results;                        -- we get max m
 
 
 select  subnum, stnum, max(mark) 'max mark' from Results
-    group by subnum, stnum order by max(mark) desc;
+    group by subnum, stnum 
+	order by max(mark) desc;
     
