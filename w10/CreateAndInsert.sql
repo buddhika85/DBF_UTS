@@ -1,7 +1,9 @@
+-- TRUNCATE
 TRUNCATE table Contents;
 TRUNCATE table Items;
 TRUNCATE table GiftPacks;
 
+-- CREATE
 CREATE TABLE GiftPacks (
     GiftPack VARCHAR(50) PRIMARY KEY,
     SalePrice DECIMAL(10, 2),
