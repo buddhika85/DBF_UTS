@@ -25,7 +25,7 @@ CREATE TABLE Contents (
 );
 
 
--- INSERT
+-- INSERT GiftPacks
 INSERT INTO GiftPacks (GiftPack, SalePrice, NumberOfGiftPacks) VALUES
 ('Birthday', 220.00, 35),
 ('Picnic', 500.00, 20),
